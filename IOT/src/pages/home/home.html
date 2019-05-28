@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>SENIOR STATUS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+        LAST SEEN LOCATION:    
+    </ion-card-header>
+  
+    <ion-card-content >
+      {{this.provider.lastMoveLocation}}
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+
+    <ion-card-header>
+        TIME SINCE LAST MOVEMENT:    
+    </ion-card-header>
+  
+    <ion-card-content >
+      {{this.provider.mins}} minutes
+      {{this.provider.secs}} seconds.
+    </ion-card-content>
+  </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+          LOCATION ACTIVITY
+        </ion-card-header>
+        <ion-card-content>
+          <canvas #doughnutCanvas></canvas>
+        </ion-card-content>
+        <ion-row justify-content-center align-items-center>
+            <button ion-button round (click)= "ionViewDidLoad()">REFRESH</button>
+          </ion-row>
+    </ion-card>
+    <ion-card>
+
+    <ion-card-header>
+        STATUS:    
+    </ion-card-header>
+  
+    <ion-card-content >
+      {{this.mqttStatus}}
+    </ion-card-content>
+    <ion-row justify-content-center align-items-center>
+      <button ion-button round (click)= "connect()">Connect</button>
+      <button ion-button round (click)= "disconnect()">Disconnect</button>
+    </ion-row>
+  </ion-card>
+
+    
+</ion-content>

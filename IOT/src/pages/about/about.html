@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      BATTERY STATUS
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img src="assets/imgs/bathroom.png"/>
+    <div class="card-title">Bathroom</div>
+    <div class="card-subtitle">{{this.provider.batLevToilet}}%</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/bedroom.png"/>
+    <div class="card-title">Bedroom</div>
+    <div class="card-subtitle">{{ this.provider.batLevBedroom}}%</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/livingroom.png"/>
+    <div class="card-title">Living room</div>
+    <div class="card-subtitle">{{this.provider.batLevLiving}}%</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/kitchen.png"/>
+    <div class="card-title">Kitchen</div>
+    <div class="card-subtitle">{{this.provider.batLevkitchen}}%</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/diningroom.png"/>
+    <div class="card-title">Dining room</div>
+    <div class="card-subtitle">{{this.provider.batLevDining}}%</div>
+  </ion-card>
+
+</ion-content>
